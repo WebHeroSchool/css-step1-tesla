@@ -3,13 +3,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="./styles/fonts.css">
-    <title>Tesla</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./fonts/fonts.css">
+    <title>Tesla S</title>
 </head>
 <body>
-    <!-- Section head -->
     <div class="header">
-        <a class="logo" href=""><img class="logo__img" src="" alt=""></a>
+        <a class="logo" href=""><img class="logo__img" src="./img/Tesla-Wordmark-Red.png" alt=""></a>
         <nav class="menu">
             <a class="menu__link" href="">Model S</a>
             <a class="menu__link" href="">Model X</a>
@@ -17,43 +17,62 @@
             <a class="menu__link" href="">Roadster</a>
             <a class="menu__link" href="">Energy</a>
         </nav>
+        <div class="right-wrap">
         <nav class="menu-right">
             <a class="menu-right__link" href="">Магазин</a>
             <a class="menu-right__link" href="">Войти</a>
         </nav>
         <div class="burger">
-            <img class="burger__img" src="" alt="">
+            <img class="burger__img" src="./img/burger.png" alt="">
+        </div>
         </div>
     </div>
-    <!-- End head -->
-    <!-- Section 1 -->
     <div class="block-top">
         <h1 class="block-top__title">Model S</h1>
         <h2 class="block-top__subtitle">Добро пожаловать в будущее!</h2>
-        <div class="speed">
-            <img src="" alt="">
-            <span>2,7 сек</span>0-100 км/час
-        </div>
-        <div class="distance">
-            <img src="" alt="">
-            <span>632 км</span>запас хода
-        </div>
-        <div class="test-drive">
-            <img class="weel" src="" alt="">
-            <a href="">Тест драйв</a>
-        </div>
-        <button class="top-order">Заказать</button>
-        <div class="arrow-down"></div>
+        <img src="./img/Tesla-Wordmark.png" alt="" class="tesla-bg">
+        <img src="./img/tesla.png" alt="" class="tesla-car">
+        <div class="tesla-spec">
+            <div class="tesla-spec__wrapper">
+            <div class="tesla-spec__speed">
+                <img src="./img/Speed.png" alt="" class="speed__icon">
+                <span class="tesla-desc">
+                    <span class="tesla-desc__wrapper">
+                        <span class="tesla-desc__numb">2,7</span>сек
+                    </span>
+                    <span class="tesla-desc__value">0-100 км/час</span>
+                </span>
+            </div>
+            <div class="tesla-spec__route">
+                <img src="./img/Road icon.png" alt="" class="distance__icon">
+                <span class="tesla-desc">
+                    <span class="tesla-desc__wrapper">
+                        <span class="tesla-desc__numb">632</span>км
+                    </span>
+                    <span class="tesla-desc__value">запас хода</span>
+                </span>
+            </div>
+            </div>
+            <div class="test-drive__wrapper">
+            <div class="test-drive">
+                <!-- <img src="./img/steering-wheel.png" alt="" class="weel__icon"> -->
+                <div class="weel__icon">
+                    
+                </div>
+                <span class="test-drive__value">Тест драйв</span>
+            </div>
+            <button class="top-order">ЗАКАЗАТЬ</button>
+            </div>
+
     </div>
-    <!-- End Section 1 -->
-    <!-- Section 2 -->
-            <!-- Section 2 Left side -->
+    </div>
+
+    </div>
     <div class="block-future">
         <div class="future-model">
             <h1 class="future-model__title">Model S</h1>
             <img class="future-model__img" src="" alt="">
         </div>
-        <!-- Section 2 Right side -->
         <div class="future-drive">
             <h2 class="future-drive__title">Будущее вождения</h2>
             <span class="future-drive__text">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.</span>
@@ -81,9 +100,6 @@
             <button class="future-order">заказать</button>
         </div>
     </div>
-    <!-- End Section 2 -->
-    <!-- Section 3 -->
-        <!-- Section 3 Left side -->
     <div class="block-security">
         <div class="security-header">
             <h2 class="security-title">Самый безопасный автомобиль в мире</h2>
@@ -150,7 +166,6 @@
             </div>
             <button class="security-order">заказать</button>
         </div>
-            <!-- Section 3 Right side -->
         <div class="security-aside">
             <h2 class="security-aside__title"></h2>
             <div class="frame-forward">
@@ -171,7 +186,6 @@
             <img class="security-aside__img" src="" alt="">
         </div>
     </div>
-    <!-- End Section 3 -->
     <div class="copyright-whs">
         <span class="copyright-whs__first-line">разработано в</span>
         <span class="copyright-whs__second-line">WebHero</span>
