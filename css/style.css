@@ -175,6 +175,11 @@ body {
     background-color: #fff;
 }
 
+.top-order:hover {
+    color: #FFFFFF;
+    background: #E51937;
+   }
+
 .tesla-spec {
     display: flex;
 	flex-direction: row;
@@ -245,6 +250,11 @@ body {
     margin-right: 40px;
     text-decoration: none;
 }
+
+.test-drive:hover {
+    color: #E51937;
+    text-decoration: underline #E51937;
+   }
 
 .tesla-spec__wrapper {
     display: flex;
