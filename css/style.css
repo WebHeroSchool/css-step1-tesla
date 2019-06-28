@@ -14,7 +14,7 @@ body {
     font-weight: 600;
     font-size: 15px;
     margin-top: 24px;
-    margin-bottom: 65px;
+    margin-bottom: 73px;
 }
 
 .logo {
@@ -32,9 +32,22 @@ body {
 
 .menu__link:last-child {
     padding-right: 0px;
-    text-decoration: none;
-    color: #000000;
-    font-weight: 600;
+}
+
+.menu__link:hover,
+.menu__link:active,
+.active-link {
+    color: #E51937;
+
+}
+
+.active-link:before {
+    position: absolute;
+    top: 64px;
+    content: "";
+    width: 60px;
+    border-bottom: 2px solid #e51937;
+    border-radius: 43%;
 }
 
 .right-wrap{
@@ -62,7 +75,11 @@ body {
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 100px;
-	position: relative;
+    position: relative;
+	/* background-image: url("../img/Tesla-Wordmark.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100% auto; */
 }
 
 .block-top:before {
@@ -85,25 +102,60 @@ body {
     line-height: 1;
     font-size: 90px;
     font-weight: 600;
+    color: #000000;
+    text-align: center;
 }
 
 .block-top__subtitle {
     margin: 0;
-    margin-bottom: 29px;
+    margin-bottom: 25px;
     font-size: 15px;
     font-weight: 500;
+    line-height: normal;
+    color: #000000;
+    letter-spacing: 0.5;
+    text-align: center;
 }
 
-.tesla-bg {
+/* .tesla-bg {
     position: absolute;
     left: 0px;
     top: 0px;
     z-index: -1;
 }
 
-.tesla-car {
+.tesla-car__wrapper {
+    max-width: 968px;
+    min-width: 320px;
+    height: auto;
     margin-bottom: 22px;
-    height: 450px;
+}
+
+.tesla-car {
+    width: 100%;
+    height: auto;
+} */
+
+.tesla-bg {
+    position: absolute;
+    max-width: 100%;
+    width: 1514px;
+}
+
+.tesla-car__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    width: 100%;
+    max-width: 968px;
+    margin: 0 auto 30px;
+}
+
+.tesla-car {
+    z-index: 1;
+    align-self: center;
+    max-width: 100%;
+    height: auto;
 }
 
 .top-order {
@@ -113,7 +165,8 @@ body {
     font-weight: bold;
     font-size: 13px;
     color: #E51937;
-	border-color: #E51937;
+    border-color: #E51937;
+    background-color: #fff;
 }
 
 .tesla-spec {
@@ -247,23 +300,29 @@ body {
     
     .block-top__subtitle {
         margin: 0;
-        margin-bottom: 29px;
+        margin-bottom: 60px;
         font-size: 10px;
         font-weight: 500;
     }
 
     .tesla-bg {
-        height: 139px;
+        position: absolute;
+         top: 77px;
+        /* left: -30px; */
+        max-width: 430px;
+        /* height: 139px; */
     }
     
     .tesla-car {
-        margin-bottom: 22px;
+        /* margin-bottom: 22px;
+        height: 166px; */
+        width: 357px;
         height: 166px;
     }
     
-    .tesla-bg {
+    /* .tesla-bg {
         top: 47px;
-    }
+    } */
     
     .tesla-spec {
         display: flex;
@@ -363,7 +422,7 @@ body {
 
 @media (min-width: 481px) and (max-width: 1024px) {
 	.header {
-		margin: 24px 33px 80px 15px;
+		margin: 27px 30px 102px 10px;
 	}
 
     .logo {
@@ -377,8 +436,13 @@ body {
         height: 42px;
         margin: 0;
     }
+
     .burger {
         margin: 0;
+    }
+
+    .block-top__subtitle {
+        margin-bottom: 85px;
     }
 
     .tesla-bg {
@@ -391,7 +455,7 @@ body {
     }
     
     .tesla-bg {
-        top: 47px;
+        top: 80px;
     }
     
     .tesla-spec {
@@ -399,13 +463,14 @@ body {
         flex-direction: column;
         align-items: center;
         margin: 0;
-        width: 303px;
+        /* width: 303px; */
+        width: 500px;
     }
     
     .tesla-spec__wrapper {
         display: flex;
         flex-direction: row;
-        margin-bottom: 43px;
+        margin-bottom: 51px;
     }
 
     .test-drive__wrapper {
@@ -443,11 +508,11 @@ body {
     }
 
     .top-order {
-        padding: 10px 41px;
+        padding: 16px 65px;
         border: 2px solid;
         text-decoration: none;
         font-weight: bold;
-        font-size: 13px;
+        font-size: 16px;
         color: #fff;
         border-color: #E51937;
         background-color: #E51937;
@@ -455,16 +520,16 @@ body {
 
     .test-drive {
         
-        margin-right: 25px;
-        padding-left: 0px;
+        margin-right: 66px;
+        padding: 0px;
     }
 
     .weel__icon {
         position: absolute;
         content: "";
         display: block;
-        width: 22px;
-        height: 22px;
+        width: 30px;
+        height: 30px;
         background: url("../img/steering-wheel-red.png");
         background-size: 100% 100%;
     }
@@ -476,7 +541,7 @@ body {
     .test-drive__value {
         color: #E51937;
         font-size: 16px;  
-        margin-left: 29px;
+        margin-left: 27px;
     }
 
 	.menu {
