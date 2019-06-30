@@ -28,6 +28,7 @@ body {
 }
 
 .menu__link:hover,
+.menu-right__link:hover,
 .menu__link:active,
 .active-link {
     color: #E51937;
@@ -35,6 +36,7 @@ body {
 }
 
 .menu__link:hover::before,
+.menu-right__link:hover::before,
 .active-link:before {
     position: absolute;
     top: 64px;
@@ -55,6 +57,7 @@ body {
     padding-right: 30px;
     text-decoration: none;
     font-family: 'Montserrat';
+    font-size: 15px;
     font-weight: 600;
     color: #000;
 }
