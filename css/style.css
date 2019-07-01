@@ -8,7 +8,8 @@ body {
     align-items: center;
     font-weight: 600;
     font-size: 15px;
-    margin: 24px 0 66px 33px;
+    padding: 24px;
+    margin-bottom: 42px;
 }
 
 .logo {
@@ -28,7 +29,6 @@ body {
 }
 
 .menu__link:hover,
-.menu-right__link:hover,
 .menu__link:active,
 .active-link {
     color: #E51937;
@@ -60,6 +60,20 @@ body {
     font-size: 15px;
     font-weight: 600;
     color: #000;
+}
+
+.menu-right__link:hover {
+    color: #E51937;
+}
+
+.menu-right__link:hover::before {
+    position: absolute;
+    top: 64px;
+    content: "";
+	height: 2px;
+    width: 60px;
+    background-image: url("../img/line.png");
+    background-size: 100% 100%; 
 }
 
 .burger {
