@@ -1,5 +1,7 @@
 body {
     font-family: Montserrat;
+    margin: 0;
+    padding: 24px 0 0 0;
 }
 
 .header {
@@ -8,7 +10,7 @@ body {
     align-items: center;
     font-weight: 600;
     font-size: 15px;
-    margin: 24px 42px 66px 33px;
+    margin: 0 auto 66px;
 }
 
 .logo {
