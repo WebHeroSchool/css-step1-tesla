@@ -12,7 +12,8 @@ body {
     font-size: 15px;
     margin: 0 auto;
     top: 24px;
-    width: 1435px;
+    /* width: 1435px; */
+    padding: 16px 0 62px 34px;
 }
 
 .logo {
@@ -50,7 +51,13 @@ body {
     background-size: 100% 100%; 
 }
 
-.right-wrap{
+/* .right-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.menu-right{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,10 +86,16 @@ body {
     background-size: 100% 100%; 
 }
 
-.burger {
+/* .burger {
     width: 24px;
     height: 15px;
     margin-right: 51px;
+} */
+
+.burger__img {
+    width: 24px;
+    height: 15px;
+    margin-right: 52px;
 }
 
  .block-top {
@@ -115,15 +128,16 @@ body {
     font-weight: 600;
     color: #000;
     text-align: center;
+    padding-top: 6px;
 }
 
 .block-top__subtitle {
     margin: 0 0 25px 0;
-    font-size: 15px;
+    font-size: 15px;    
     font-weight: 500;
     line-height: normal;
     color: #000;
-    letter-spacing: 0.5;
+    /* letter-spacing: 0.5; */
     text-align: center;
 }
 
@@ -139,7 +153,7 @@ body {
     align-items: top;
     width: 100%;
     max-width: 968px;
-    margin: 0 auto 30px;
+    margin: 0 auto 28px;
 }
 
 .tesla-car {
@@ -171,21 +185,22 @@ body {
     align-items: center;
     font-weight: 600;
 	font-size: 20px;
-	margin: 0;
+    margin: 0;
+    padding-left: 15px;
 }
 
 .tesla-spec__speed {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 85px 0 0;
 }
 
 .tesla-spec__route {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 71px 0 0;
 }
 
 .tesla-desc__numb {
@@ -207,7 +222,7 @@ body {
 .speed__icon {
 	width: 46px;
     height: 35px;
-    margin-right: 14px;
+    padding: 0 14px 0 17px;
 }
 
 .distance__icon {
