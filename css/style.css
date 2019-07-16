@@ -1,7 +1,5 @@
 body {
     font-family: Montserrat;
-    /* margin: 0;
-    padding: 24px 0 0 0; */
 }
 
 .header {
@@ -12,7 +10,6 @@ body {
     font-size: 15px;
     margin: 0 auto;
     top: 24px;
-    /* width: 1435px; */
     padding: 16px 0 62px 34px;
 }
 
@@ -51,12 +48,6 @@ body {
     background-size: 100% 100%; 
 }
 
-/* .right-wrap{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
-
 .menu-right{
     display: flex;
     justify-content: space-between;
@@ -85,12 +76,6 @@ body {
     background-image: url("../img/line.png");
     background-size: 100% 100%; 
 }
-
-/* .burger {
-    width: 24px;
-    height: 15px;
-    margin-right: 51px;
-} */
 
 .burger__img {
     width: 24px;
@@ -137,7 +122,6 @@ body {
     font-weight: 500;
     line-height: normal;
     color: #000;
-    /* letter-spacing: 0.5; */
     text-align: center;
 }
 
@@ -164,7 +148,7 @@ body {
 }
 
 .top-order {
-    padding: 10px 41px;
+    padding: 10px 42px;
     border: 2px solid;
     text-decoration: none;
     font-weight: bold;
@@ -181,26 +165,25 @@ body {
 
 .tesla-spec {
     display: flex;
-	flex-direction: row;
+    justify-content: center;
     align-items: center;
     font-weight: 600;
 	font-size: 20px;
     margin: 0;
-    padding-left: 15px;
 }
 
 .tesla-spec__speed {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 85px 0 0;
+    margin-right: 82px;
 }
 
 .tesla-spec__route {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 71px 0 0;
+    margin-right: 105px;
 }
 
 .tesla-desc__numb {
@@ -222,7 +205,7 @@ body {
 .speed__icon {
 	width: 46px;
     height: 35px;
-    padding: 0 14px 0 17px;
+    margin-right: 14px;
 }
 
 .distance__icon {
@@ -242,7 +225,8 @@ body {
 }
 
 .test-drive {
-    padding-left: 29px;
+    display: flex;
+    align-items: center;
     margin-right: 40px;
     text-decoration: none;
 }
@@ -264,18 +248,7 @@ body {
     align-items: center;
 }
 
-.weel__icon {
-    position: absolute;
-	content: "";
-	display: block;
-	width: 22px;
-	height: 22px;
-    background: url("../img/steering-wheel.png");
-	background-size: 100% 100%;
-}
-
 .test-drive__value {
-    margin-left: 29px;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 13px;
