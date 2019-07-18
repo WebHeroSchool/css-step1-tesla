@@ -129,6 +129,7 @@ body {
     position: absolute;
     max-width: 100%;
     width: 1514px;
+    height: auto;
 }
 
 .tesla-car__wrapper {
@@ -292,7 +293,9 @@ body {
     .tesla-bg {
         position: absolute;
         top: 44px;
-        max-width: 448px;
+        max-width: 100%;
+        width: 448px;
+        height: auto;
     }
     
     .tesla-car {
