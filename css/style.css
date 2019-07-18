@@ -429,7 +429,7 @@ body {
     }
 
     .tesla-bg {
-        height: 271px;
+        height: auto;
     }
     
     .tesla-car {
