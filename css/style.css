@@ -283,13 +283,13 @@ body {
     display: block;
     width: 22px;
     height: 22px;
-    background: url("../img/steering-wheel.png");
+    background: url("../img/steering-wheel.png") no-repeat;
     background-size: 100% 100%;
     margin-right: 7px;
 }
 
 .test-drive__btn:hover::before {
-    background: url("../img/steering-wheel-red.png");
+    background: url("../img/steering-wheel-red.png") no-repeat;
 }
 
 /* .test-drive__value {
@@ -438,7 +438,7 @@ body {
         display: block;
         width: 22px;
         height: 22px;
-        background: url("../img/steering-wheel-red.png");
+        background: url("../img/steering-wheel-red.png") no-repeat;
         background-size: 100% 100%;
     }
 
@@ -572,8 +572,7 @@ body {
         margin: 0;
         padding: 0;
         color: #E51937;
-        font-size: 16px;  
-        margin-left: 35px;
+        font-size: 16px;
         cursor: pointer;
     }
 
@@ -582,7 +581,7 @@ body {
         display: block;
         width: 30px;
         height: 30px;
-        background: url("../img/steering-wheel-red.png");
+        background: url("../img/steering-wheel-red.png") no-repeat;
         background-size: 100% 100%;
     }
 
