@@ -19,6 +19,7 @@ body {
 }
 
 .menu__link {
+    position: relative;
     padding-right: 44px;
     text-decoration: none;
     color: #000;
@@ -40,7 +41,7 @@ body {
 .menu-right__link:hover::before,
 .active-link:before {
     position: absolute;
-    top: 64px;
+    top: 25px;
     content: "";
 	height: 2px;
     width: 60px;
@@ -162,6 +163,7 @@ body {
 .top-order:hover {
     color: #FFF;
     background: #E51937;
+    cursor: pointer;
    }
 
 .tesla-spec {
@@ -215,27 +217,39 @@ body {
     margin-right: 11px;
 }
 
-.weel__icon {
+/* .weel__icon {
 	width: 22px;
     height: 22px;
     margin-right: 7px;
-}
+} */
+
+/* .weel__icon {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url("../img/steering-wheel.png");
+    background-size: 100% 100%;
+    margin-right: 7px;
+} */
 
 .distance {
 	margin-right: 105px;
 }
 
-.test-drive {
+/* .test-drive {
     display: flex;
     align-items: center;
     margin-right: 40px;
     text-decoration: none;
+    position: relative;
 }
 
 .test-drive:hover {
     color: #E51937;
     text-decoration: underline #E51937;
-   }
+   } */
 
 .tesla-spec__wrapper {
     display: flex;
@@ -249,12 +263,41 @@ body {
     align-items: center;
 }
 
-.test-drive__value {
+.test-drive__btn {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    margin-right: 33px
+}
+.test-drive__btn:hover {
+    color: #E51937;
+    cursor: pointer;
+}
+
+.test-drive__btn::before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url("../img/steering-wheel.png");
+    background-size: 100% 100%;
+    margin-right: 7px;
+}
+
+.test-drive__btn:hover::before {
+    background: url("../img/steering-wheel-red.png");
+}
+
+/* .test-drive__value {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 13px;
     color: #000;
-}
+} */
 
 @media (max-width: 480px) {
 	.header {
@@ -318,7 +361,8 @@ body {
 
     .test-drive__wrapper {
         display: flex;
-        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
         position: relative;
     }
 
@@ -367,7 +411,7 @@ body {
         padding-left: 0px;
     }
 
-    .weel__icon {
+    /* .weel__icon {
         position: absolute;
         content: "";
         display: block;
@@ -375,17 +419,35 @@ body {
         height: 22px;
         background: url("../img/steering-wheel-red.png");
         background-size: 100% 100%;
-    }
+    } */
     .test-drive__numb {
         font-size: 27px;
         margin-right: 6px;
     }
     
-    .test-drive__value {
+    .test-drive__btn {
+        margin: 0;
+        padding: 0;
+        color: #E51937;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    .test-drive__btn:before {
+        content: "";
+        display: block;
+        width: 22px;
+        height: 22px;
+        background: url("../img/steering-wheel-red.png");
+        background-size: 100% 100%;
+    }
+
+
+    /* .test-drive__value {
         color: #E51937;
         font-size: 13px;  
         margin-left: 29px;
-    }
+    } */
 
 	.menu {
 		display: none;
@@ -397,7 +459,7 @@ body {
 
 }
 
-@media (min-width: 481px) and (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 986px) {
 	.header {
         padding: 38px 0 0 0;
 		margin-bottom: 102px;
@@ -456,7 +518,8 @@ body {
 
     .test-drive__wrapper {
         display: flex;
-        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
         position: relative;
     }
 
@@ -504,8 +567,17 @@ body {
         padding: 0px;
     }
 
-    .weel__icon {
-        position: absolute;
+
+    .test-drive__btn {
+        margin: 0;
+        padding: 0;
+        color: #E51937;
+        font-size: 16px;  
+        margin-left: 35px;
+        cursor: pointer;
+    }
+
+    .test-drive__btn:before {
         content: "";
         display: block;
         width: 30px;
@@ -513,16 +585,26 @@ body {
         background: url("../img/steering-wheel-red.png");
         background-size: 100% 100%;
     }
+
+    /* .weel__icon {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: url("../img/steering-wheel-red.png");
+        background-size: 100% 100%;
+    } */
     .test-drive__numb {
         font-size: 27px;
         margin-right: 6px;
     }
     
-    .test-drive__value {
+    /* .test-drive__value {
         color: #E51937;
         font-size: 16px;  
         margin-left: 35px;
-    }
+    } */
 
 	.menu {
 		display: none;
