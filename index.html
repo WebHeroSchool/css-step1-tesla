@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="./fonts/fonts.css">
     <title>Tesla S</title>
 </head>
-<body>
+<body class="container">
     <div class="header">
         <a class="logo" href=""><img class="logo__img" src="./img/Tesla-Wordmark-Red.png" alt=""></a>
         <nav class="menu">
@@ -62,125 +62,132 @@
     <div class="block-future">
         <div class="future-model">
             <h1 class="future-model__title">Model S</h1>
-            <img class="future-model__img" src="" alt="">
         </div>
-        <div class="future-drive child-active">
-            <h2 class="future-drive__title">Будущее вождения</h2>
-            <span class="future-drive__text">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.</span>
-            <div class="tesla-display">
-                <img class="tesla-display__img" src="" alt="">
-                <span class="tesla-display__inc">17</span>
-                <span class="tesla-display__inc-name">дюймов</span>
-                <span class="tesla-display__big-size">Большой дисплей</span>
+        <div class="future-drive">
+            <div class="future-drive-wrapper">
+                <div class="future-drive__section1">
+                <h2 class="future-drive__title">Будущее вождения</h2>
+                <span class="future-drive__text">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.</span>
+                </div>
+                <div  class="future-drive__section2">
+                <div class="tesla-display">
+                    <img class="tesla-display__img" src="./img/display-icon.png" alt="">
+                    <div class="tesla-display__title">
+                        <div class="tesla-display__inc__wrapper">
+                            <span class="tesla-display__inc">17</span>дюймов
+                        </div>
+                        <span class="tesla-display__big-size">Большой дисплей</span>
+                    </div>
+                </div>
+                <div class="tesla-soft">
+                        <div class="tesla-soft__img"><img class="tesla-soft__img_element" src="./img/wifi-icon.png" alt=""></div>
+                        <div class="tesla-soft__title">
+                            <div class="tesla-soft__wifi__wrapper">
+                                <p class="tesla-soft__wifi">Беспроводное</p><p class="tesla-soft__wifi_up">обновление ПО</p>
+                            </div>
+                            <p class="tesla-soft__function">Повышенная </p><p class="tesla-soft__function_up">фунциональность</p>
+                        </div>
+                </div>
+                <div class="tesla-space">
+                    <div class="tesla-space__img"><img class="tesla-space__img_element" src="./img/bag-icon.png" alt=""></div>
+                    <div class="tesla-space__title">
+                        <span class="tesla-space__title__wrapper">
+                            <span class="tesla-space__digit">894</span>литра
+                        </span>
+                        <p class="tesla-space__info">объем грузового</p><p class="tesla-space__info_up">пространства</p>
+                    </div>
+                </div>
+                </div>
+
+
             </div>
-            <div class="tesla-soft">
-                <img class="tesla-soft__img" src="" alt="">
-                <span class="tesla-soft__wifi">Беспроводное обновление ПО</span>
-                <span class="tesla-soft__function">Повышенная фунциональность</span>                
+            <div class="future-btn__wrapper">
+                <button class="future-more">узнать больше</button>
+                <button class="future-order">заказать</button>
             </div>
-            <div class="tesla-space">
-                <img class="tesla-space__img" src="" alt="">
-                <span class="tesla-space__size">894</span>
-                <span class="tesla-space__size-name">литра</span>
-                <span class="tesla-space__text">объем грузового пространства</span>
-            </div>
-            <div class="future-more">
-                <img class="future-more__img" src="" alt="">
-                <span class="future-more_text">узнать больше</span>
-            </div>
-            <button class="future-order">заказать</button>
         </div>
     </div>
     <div class="block-security">
-        <div class="security-header">
-            <h2 class="security-title">Самый безопасный автомобиль в мире</h2>
-            <span class="security-text">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.</span>
-            <h2 class="rating-title">Оценка защиты: </h2>
-            <div class="security-rating">
-                <span class="security-rating__text">Спереди</span>
-                <div class="rate-star">
-                    <span class="rate-star__icon"></span>
-                    <span class="rate-star__icon"></span>
-                    <span class="rate-star__icon"></span>
-                    <span class="rate-star__icon"></span>
-                    <span class="rate-star__icon"></span>
+        <div class="block-security-section1">
+                <div class="block-security-section1__wrapper">
+                    <div class="block-security-section1__header">
+                    <h2 class="block-security-section1__title">Самый безопасный автомобиль в мире</h2>
+                    <span class="block-security-section1__text">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.</span>
+                    </div>
+                    <div class="security-rating">
+                        <h3 class="security-rating__title">Оценка защиты:</h3>
+                        <div class="rating-category">
+                         <span class="rating-category__text">спереди</span>
+                         <div class="security-stars">
+                          <span class="security-stars__icon"></span>
+                          <span class="security-stars__icon"></span>
+                          <span class="security-stars__icon"></span>
+                          <span class="security-stars__icon"></span>
+                          <span class="security-stars__icon"></span>
+                         </div>
+                        </div>
+                        <div class="rating-category">
+                         <span class="rating-category__text">сбоку</span>
+                         <div class="security-stars">
+                          <span class="security-stars__icon"></span>
+                          <span class="security-stars__icon"></span>
+                          <span class="security-stars__icon"></span>
+                          <span class="security-stars__icon"></span>
+                          <span class="security-stars__icon"></span>
+                         </div>
+                        </div>
+                        <div class="rating-category">
+                         <span class="rating-category__text">сбоку<span class="rating-category__text-add">(стойка)</span></span>
+                         <div class="security-stars">
+                          <span class="security-stars__icon"></span>
+                          <span class="security-stars__icon"></span>
+                          <span class="security-stars__icon"></span>
+                          <span class="security-stars__icon"></span>
+                          <span class="security-stars__icon"></span>
+                         </div>
+                        </div>
+                        <div class="rating-category">
+                         <span class="rating-category__text">водитель</span>
+                         <div class="security-stars">
+                          <span class="security-stars__icon"></span>
+                          <span class="security-stars__icon"></span>
+                          <span class="security-stars__icon"></span>
+                          <span class="security-stars__icon"></span>
+                          <span class="security-stars__icon"></span>
+                         </div>
+                        </div>
+                        <div class="rating-category">
+                         <span class="rating-category__text">пассажир</span>
+                         <div class="security-stars">
+                          <span class="security-stars__icon"></span>
+                          <span class="security-stars__icon"></span>
+                          <span class="security-stars__icon"></span>
+                          <span class="security-stars__icon"></span>
+                          <span class="security-stars__icon"></span>
+                         </div>
+                        </div>
+                    </div>
+                    <div class="block-security-stars">
+                    <img class="block-security-stars__img" src="./img/security.png" alt="">
+                    <div class="block-security-stars__title">
+                        <div class="block-security-stars__inc__wrapper">
+                            <span class="block-security-stars__inc">5 звезд</span>
+                        </div>
+                        <span class="block-security-stars__big-size">безопасности</span>
+                    </div>
                 </div>
-            </div>
-            <div class="security-rating">
-                <span class="security-rating__text">Сбоку</span>
-                <div class="rate-star">
-                    <span class="rate-star__icon"></span>
-                    <span class="rate-star__icon"></span>
-                    <span class="rate-star__icon"></span>
-                    <span class="rate-star__icon"></span>
-                    <span class="rate-star__icon"></span>
                 </div>
-            </div>
-            <div class="security-rating">
-                <span class="security-rating__text">Сбоку(стойка)</span>
-                <div class="rate-star">
-                    <span class="rate-star__icon"></span>
-                    <span class="rate-star__icon"></span>
-                    <span class="rate-star__icon"></span>
-                    <span class="rate-star__icon"></span>
-                    <span class="rate-star__icon"></span>
+                <div class="block-security-btn__wrapper">
+                <button class="block-security__btn">Тест драйв</button>
+                <button class="block-security__order">ЗАКАЗАТЬ</button>
                 </div>
-            </div>
-            <div class="security-rating">
-                <span class="security-rating__text">ВОДИТЕЛЬ</span>
-                <div class="rate-star">
-                    <span class="rate-star__icon"></span>
-                    <span class="rate-star__icon"></span>
-                    <span class="rate-star__icon"></span>
-                    <span class="rate-star__icon"></span>
-                    <span class="rate-star__icon"></span>
-                </div>
-            </div>
-            <div class="security-rating">
-                <span class="security-rating__text">ПАССАЖИР</span>
-                <div class="rate-star">
-                    <span class="rate-star__icon"></span>
-                    <span class="rate-star__icon"></span>
-                    <span class="rate-star__icon"></span>
-                    <span class="rate-star__icon"></span>
-                    <span class="rate-star__icon"></span>
-                </div>
-            </div>
-            <div class="security-stars">
-                <img class="security-stars__img" src="" alt="">
-                <span class="security-stars__five">5 звезд</span>
-                <span class="security-stars__text">безопасности</span>
-            </div>
-            <div class="security-more">
-                <img class="security-more__img" src="" alt="">
-                <span class="security-more_text">узнать больше</span>
-            </div>
-            <button class="security-order">заказать</button>
         </div>
-        <div class="security-aside">
-            <h2 class="security-aside__title"></h2>
-            <div class="frame-forward">
-                <span class="frame-forward__text"></span>
-                <span class="frame-forward__line"></span>
-                <span class="frame-forward__circle"></span>
+        <div class="block-security-section2">
+            <div class="block-security-section2__img"></div>
+            <div class="madeinwhs">
+                <img src="./img/whs.png" class="madeinwhs__logo" alt="">
             </div>
-            <div class="frame-side">
-                <span class="frame-side__text"></span>
-                <span class="frame-side__line"></span>
-                <span class="frame-side__circle"></span>
-            </div>
-            <div class="frame-risk">
-                <span class="frame-risk__text"></span>
-                <span class="frame-risk__line"></span>
-                <span class="frame-risk__circle"></span>
-            </div>
-            <img class="security-aside__img" src="" alt="">
         </div>
-    </div>
-    <div class="copyright-whs">
-        <span class="copyright-whs__first-line">разработано в</span>
-        <span class="copyright-whs__second-line">WebHero</span>
-        <span class="copyright-whs__thrid-line">School</span>
     </div>
 </body>
 </html>
