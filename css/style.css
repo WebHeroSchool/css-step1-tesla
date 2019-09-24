@@ -12,8 +12,7 @@
     font-weight: 600;
     font-size: 15px;
     margin: 0 auto;
-    top: 24px;
-    padding: 16px 0 62px 34px;
+    height: 129px;
 }
 
 .logo {
@@ -295,14 +294,12 @@
 .future-drive__title {
     font-weight: 600;
     font-size: 30px;
-    padding-left: 3px;
 }
 
 .future-drive__text {
     display: inline-block;
     font-weight: 500;
     font-size: 15px;
-    padding-left: 3px;
     margin-bottom: 54px;
 }
 
@@ -438,7 +435,7 @@
 }
 
 .future-more {
-    display: flex;
+    display: inherit;
     align-items: center;
     border: none;
     text-transform: uppercase;
@@ -543,9 +540,9 @@
 }
 
 .security-stars__icon {
-    background: url(../img/Star.png) no-repeat;
+    background: url(../img/Star.png) repeat-x;
     height: 25px;
-    width: 25px;
+    width: 125px;
     margin-right: 4px;
 }
 
@@ -586,7 +583,7 @@
 }
 
 .block-security__btn {
-    display: flex;
+    display: inherit;
     align-items: center;
     border: none;
     text-transform: uppercase;
@@ -633,26 +630,26 @@
 .block-security-section2 {
     display: flex;
     position: relative;
+    flex-basis: auto;
     background: url(../img/Model\ S.png) no-repeat 100% 19%;
     background-size: auto 17%;
 }
 
 .block-security-section2__img {
     position: relative;
-    background: url(../img/Car_frame.png) no-repeat 50% 50%;
-    background-size: 105% auto;
-    max-width: 1228px;
-    min-width: 900px;
-    right: 7%;
+    max-width: 100%;
+    height: auto;
+    right: 11%;
+    top: 33%;
 }
 
 .madeinwhs {
     position: absolute;
     top: 94.5%;
-    left: 89%;
+    left: 82%;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 986px) {
     .header {
         padding: 38px 0 0 0;
 		margin-bottom: 102px;
@@ -830,13 +827,20 @@
     }
 
     .block-security-section2 {
-        min-height: 685px;
+        min-height: auto;
         background-size: 90% auto;
+        background-position-y: 20%;
+    }
+
+    .block-security-section2__pict {
+        min-height: 675px;
     }
 
     .block-security-section2__img {
         flex: auto;
         background-size: 80% auto;
+        top: 20%;
+        right: 0;
     }
 
     .block-security-section1__wrapper {
@@ -870,7 +874,7 @@
     }
 }
 
-@media (min-width: 375px) and (max-width: 767px) {
+@media (max-width: 600px) {
     .header {
         padding: 0;
         margin-bottom: 30px;
@@ -1055,14 +1059,19 @@
     }
 
     .block-security-section2 {
-        min-height: 685px;
+        min-height: auto;
         background-size: 90% auto;
+    }
+
+    .block-security-section2__pict {
+        min-height: 400px;
     }
 
     .block-security-section2__img {
         flex: auto;
         background-size: 100% auto;
-        min-width: 700px;
+        min-width: auto;
+        top: 16%;
         right: 0;
     }
 
