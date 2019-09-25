@@ -555,7 +555,7 @@
 .block-security-stars__img {
 	width: 62px;
     height: 74px;
-    margin-right: 23px;
+    margin-right: 13px;
 }
 
 .block-security-stars__title {
@@ -567,7 +567,6 @@
     line-height: 0.9;
     font-size: 50px;
     font-weight: 600;
-    margin-right: 6px;
 }
 
 .block-security-stars__big-size {
